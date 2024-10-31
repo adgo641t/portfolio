@@ -7,9 +7,7 @@ body {
   background-color: rgb(246, 246, 246);
   height: 500px;;}
 
-.card {
-  height: 400px;
-}
+
 .barra {
     margin-bottom: 50px;
 }
@@ -70,6 +68,10 @@ body {
 
 .Aboutme {
   margin-top: 50px;
+}
+
+.column {
+  display: flex;
 }
 @keyframes textclip {
   to {
