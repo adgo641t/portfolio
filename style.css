@@ -3,7 +3,13 @@ body {
     background-color: #f7faff;
 
 }
+.cards_container {
+  background-color: rgb(246, 246, 246);
+  height: 500px;;}
 
+.card {
+  height: 400px;
+}
 .barra {
     margin-bottom: 50px;
 }
@@ -34,7 +40,37 @@ body {
   animation: textclip 2s linear infinite;
 }
 
+.htmlicon {
+  text-align: center;
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 50px;
+  line-height: 100px;
+}
 
+.b_icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 100px;
+}
+
+.database_icon {
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  line-height: 100px;
+}
+
+.Aboutme {
+  margin-top: 50px;
+}
 @keyframes textclip {
   to {
     background-position: 200% center;
