@@ -397,3 +397,35 @@ body {
 .icon-box:hover .description {
   opacity: 1; /* Hace que la descripción sea visible al pasar el ratón */
 }
+
+.opinions-section {
+  padding: 60px 30px; /* Espaciado interno */
+  margin-top: 50px;
+}
+.opinions-section h2 {
+  text-align: center; /* Centrar el encabezado */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+.opinion {
+  text-align: center; /* Centrar el texto de la opinión */
+  margin-bottom: 30px; /* Espaciado entre opiniones */
+}
+.opinion img {
+  width: 80px; /* Ancho de la imagen de perfil */
+  height: 80px; /* Alto de la imagen de perfil */
+  border-radius: 50%; /* Hacer la imagen redonda */
+  margin-bottom: 15px; /* Espaciado inferior */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil para la imagen */
+}
+.opinion p {
+  font-style: italic; /* Estilo en cursiva para la opinión */
+  margin-bottom: 10px; /* Espaciado inferior */
+}
+.opinion h5 {
+  margin: 5px 0; /* Espaciado para el nombre */
+  font-weight: bold; /* Hacer el nombre más destacado */
+}
+.opinion span {
+  color: #007bff; /* Color para el cargo */
+  font-size: 0.9rem; /* Tamaño de fuente más pequeño para el cargo */
+}
