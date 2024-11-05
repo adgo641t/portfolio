@@ -1,4 +1,7 @@
 <?php
+ini_set('SMTP','myserver');
+ini_set('smtp_port',25);
+
 // Verificar si se envió el formulario
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     // Obtener los datos del formulario
