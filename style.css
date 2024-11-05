@@ -61,24 +61,52 @@ body {
   margin-bottom: 15px;
 }
 
-
- .show {
-  text-decoration: none;
-  padding: 14px 32px;
-  font-size: 1.1rem;
-  font-weight: bold;
-  background-color: #22c1c3;
-  color: #333;
-  border-radius: 8px;
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-  transition: all 0.3s ease;
+.hero {
+  background: url('img/landscape.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  text-align: center;
+  padding: 0 20px;
+  position: relative;
 }
-
-.hero a:hover {
-  background-color: #fdbb2d;
-  color: #fff;
-  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  transform: translateY(-3px);
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); /* Capa oscura para mejorar la legibilidad */
+  z-index: 1;
+}
+.hero-content {
+  position: relative;
+  z-index: 2; /* Asegura que el contenido esté por encima de la capa oscura */
+}
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.hero p {
+  font-size: 1.25rem;
+  margin-bottom: 30px;
+}
+.show {
+  background-color: #007bff;
+  color: #ffffff;
+  padding: 10px 20px;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+.show:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
 }
 .cards_container {
   background-color: rgb(246, 246, 246);
@@ -206,12 +234,20 @@ body {
 .Aboutme {
   margin-top: 50px;
 }
+.workstyle {
+  margin-bottom: 20px; /* Espaciado entre los elementos de la lista */
+  font-size: 1.1rem; /* Tamaño de fuente mediano para los elementos de la lista */
+  border-left: 4px solid #007bff; /* Línea a la izquierda del texto */
+  padding-left: 15px; /* Espaciado interno a la izquierda */
+  transition: background-color 0.3s; /* Transición para el efecto de hover */
+}
 
 .column {
   display: flex;
 }
 
-/* Estilos de la sección */
+
+/* Estilos de la sección links*/
 .social-links {
   background-color: #f4f4f4;
   padding: 40px 0;
@@ -276,38 +312,22 @@ body {
     padding: 12px 25px;
   }
 }
-
-/* Estilos del footer */
-.footer {
-  background-color: #2c3e50;
-  padding: 20px 0;
-  text-align: center;
-}
-
-.footer-container {
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 0 20px;
-}
-
-.footer-links {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.social-icons {
+  background-color: #a9acb1; /* Color de fondo suave */
   display: flex;
   justify-content: center;
-  gap: 20px;
+  align-items: center;
+  text-align: center;
+  height: 300px;
 }
-
-.footer-link {
-  color: #ecf0f1;
-  text-decoration: none;
-  font-size: 18px;
-  transition: color 0.3s;
+.social-icon {
+  font-size: 5rem; /* Tamaño grande del icono */
+  margin: 20px; /* Espaciado entre iconos */
+  color: #333; /* Color base */
+  transition: color 0.3s; /* Transición suave para el hover */
 }
-
-.footer-link:hover {
-  color: #3498db;
+.social-icon:hover {
+  color: #007bff; /* Color azul al hacer hover */
 }
 @keyframes textclip {
   to {
