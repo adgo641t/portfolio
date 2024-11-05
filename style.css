@@ -344,3 +344,56 @@ body {
     margin-bottom: 10px;
   }
 }
+
+.work-style {
+  padding: 60px 30px; /* Espaciado interno */
+  background-color: #ffffff; /* Fondo blanco para la sección */
+  border-radius: 12px; /* Bordes redondeados */
+  box-shadow: 0 4px 25px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+}
+.work-style h2 {
+  text-align: center; /* Centrar el encabezado */
+  color: #007bff; /* Color del encabezado */
+  margin-bottom: 30px; /* Espaciado inferior */
+}
+.icon-container {
+  display: flex; /* Usar flexbox para distribución */
+  justify-content: center; /* Centrar horizontalmente */
+  flex-wrap: wrap; /* Permitir el ajuste en pantallas pequeñas */
+}
+.icon-box {
+  position: relative; /* Para el posicionamiento del texto */
+  width: 120px; /* Ancho fijo para los íconos */
+  height: 120px; /* Alto fijo para los íconos */
+  margin: 15px; /* Margen entre íconos */
+  border-radius: 10px; /* Bordes redondeados */
+  background-color: #e9f7ff; /* Color de fondo de los íconos */
+  display: flex; /* Usar flexbox para centrar el ícono */
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center; /* Centrar verticalmente */
+  transition: transform 0.3s; /* Transición suave para el efecto de hover */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el ícono */
+}
+.icon-box:hover {
+  transform: scale(1.1); /* Efecto de aumento al pasar el ratón */
+}
+.icon {
+  font-size: 3rem; /* Tamaño del ícono */
+  color: #007bff; /* Color del ícono */
+}
+.description {
+  position: absolute; /* Posicionamiento absoluto para el texto */
+  bottom: -40px; /* Coloca el texto debajo del ícono */
+  left: 50%; /* Centra horizontalmente el texto */
+  transform: translateX(-50%); /* Ajuste para centrar correctamente */
+  background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+  color: #ffffff; /* Color del texto */
+  padding: 5px 10px; /* Espaciado interno */
+  border-radius: 5px; /* Bordes redondeados */
+  white-space: nowrap; /* Evita el salto de línea */
+  opacity: 0; /* Inicialmente invisible */
+  transition: opacity 0.3s; /* Transición suave para la opacidad */
+}
+.icon-box:hover .description {
+  opacity: 1; /* Hace que la descripción sea visible al pasar el ratón */
+}
