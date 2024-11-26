@@ -28,7 +28,7 @@
 </head>
 <body>
  <div class="container  barra">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-dark navbar-expand-lg">
           <a class="navbar-brand" href="#">Adrian Gomez  -  Fullstack Developer</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -57,6 +57,55 @@
       <a class="show" href="#proyectos">Show Projects</a>
       </div>
     </section>
+    <br>
+    <h1 class="text-center mt-5" id="Aboutme" >About me</h1>
+    <br>
+    <div class="container Aboutme">
+      <div class="row g-2">
+        <!-- Mapa (Google Maps) -->
+        <div class="col-12 col-md-6">
+              <!--experiencia laboral-->
+            <div class="timeline-container">
+              <div class="timeline">
+                  <div class="timeline-item">
+                      <div class="circle"></div>
+                      <div class="content">
+                          <h3>2022 - 2023</h3>
+                          <p>Desarrollador Fullstack en Indian Webs</p>
+                      </div>
+                  </div>
+                  <div class="timeline-item">
+                      <div class="circle"></div>
+                      <div class="content">
+                          <h3>2022 - 2023</h3>
+                          <p>Desarrollador de aplicaciones web (DAW)</p>
+                      </div>
+                  </div>
+                  <div class="timeline-item">
+                      <div class="circle"></div>
+                      <div class="content">
+                          <h3>2019 - 2019</h3>
+                          <p>IT Helpdek</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+        </div>
+        <!-- Descripción (Workstyle) -->
+        <div class="col-12 col-md-6" style="position: relative;">
+         <div style="position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);">
+          <p class="text-center">
+            Hi, I'm Adrian. I am a FullStack Developer. I completed the Advanced Degree in Web Application Development (DAW) at the Provençana Institute, one of the best training centers in Barcelona. I learned technologies such as HTML, CSS, JavaScript, and PHP, as well as frameworks such as Angular and Laravel, developing modern and efficient applications.
+          </p>
+         </div>
+    
+          <!-- Botón debajo del texto -->
+        </div>
+      </div>
+    </div>
     <br>
     <!--stack-->
     <div class="container tech-stack">
@@ -89,7 +138,7 @@
               <div class="card tech-card">
                   <i class="fas fa-database tech-icon"></i>
                   <div class="card-body">
-                      <h5 class="card-title">Base de Datos</h5>
+                      <h5 class="card-title">Database</h5>
                       <p class="card-text">MySQL, MongoDB, PostgreSQL, PL/SQL</p>
                   </div>
               </div>
@@ -97,7 +146,7 @@
       </div>
   </div>
     <!-- Sección de Proyectos -->
-  <h2 id="proyectos" class="text-center" style="padding-top: 50px; padding-bottom: 50px;" >My Projects</h2>
+  <h2 id="proyectos" class="text-center" style="padding-bottom: 50px;" >My Projects</h2>
 
   <section id="proyectos" class="projects-section">
     <!-- Tarjeta de Proyecto 1 -->
@@ -106,7 +155,15 @@
       <div class="project-info">
         <h3 class="project-title">FoodFit</h3>
         <p class="project-description">Web application made with laravel 8 with user authentication and registration, order and payment request, use of eloquent and ORM (object-model-relational) for the database, implementation of Gmail API for sending confirmation and emailing..</p>
-        <button class="btn btn-primary"> <a href="https://github.com/adgo641t/Foodfit" style="text-decoration: none; color: aliceblue;" target="_blank">Github</a></button>
+        <div class="logo_holder">
+            <img src="img/php.png" alt="" class="logos_coder">
+            <img src="img/html.png" alt="" class="logos_coder">
+            <img src="img/js.png" alt="" class="logos_coder">
+            <img src="img/css-3-logo-2942968697.png" alt="" class="logos_coder">
+          <img src="img/laravel.jpg" alt="" class="logos_coder">
+        </div>
+ 
+
       </div>
     </div>
 
@@ -132,32 +189,7 @@
 
   </section>
 
-    <h1 class="text-center mt-5" id="Aboutme" >About me</h1>
-    <br>
-    <div class="container Aboutme">
-      <div class="row g-2">
-        <!-- Mapa (Google Maps) -->
-        <div class="col-12 col-md-6">
-          <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5988.999228968857!2d2.112031212159726!3d41.363228771183124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e7c3a7aa05%3A0x478782c735a4c713!2sInstituto%20p%C3%BAblico%20Proven%C3%A7ana!5e0!3m2!1ses!2ses!4v1730386961138!5m2!1ses!2ses" 
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-          </iframe>
-        </div>
-    
-        <!-- Descripción (Workstyle) -->
-        <div class="col-12 col-md-6">
-          <p class="text-center">
-            Hi, I'm Adrian. I am a FullStack Developer. I completed the Advanced Degree in Web Application Development (DAW) at the Provençana Institute, one of the best training centers in Barcelona. I learned technologies such as HTML, CSS, JavaScript, and PHP, as well as frameworks such as Angular and Laravel, developing modern and efficient applications.
-          </p>
-    
-          <!-- Botón debajo del texto -->
-          <div class="text-center">
-            <a href="https://www.proven.cat/intraweb/index.php" class="btn btn-primary">Provençana Website</a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <br>
+   
     <!-- <div class="container work">
       <div class="row g-2">
         <div class="col-12 col-md-6">
@@ -217,7 +249,7 @@
           </div>
       </div>
   </div>
-    <div class="container opinions-section">
+      <div class="container opinions-section">
       <h2>Professional Opinions</h2> <!-- Encabezado para la sección -->
       <div class="row">
           <div class="col-12 col-md-6 opinion">
