@@ -1,5 +1,5 @@
 body{
-    height: 300vh; /* Para permitir el scroll */
+    height: 250vh; /* Para permitir el scroll */
     background-color: #000033; /* Azul oscuro */
     transition: background-color 0.5s ease;
     color: aliceblue;
@@ -54,9 +54,12 @@ h1 {
 }
 
 .proyect {
-    border: 1px solid white;
+    border: 1px solid #ffffff;
     border-radius: 10px;
+    text-align: center;
+
 }
+
 
 .icons-lenguaje i{
     padding: 10px;
@@ -67,3 +70,17 @@ h1 {
     padding: auto;
     font-size: 70px;
 }
+
+a {
+    text-decoration: underline;
+}
+
+.footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
