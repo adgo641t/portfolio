@@ -48,16 +48,44 @@ h1 {
 
 .proyects {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* 3 columnas iguales */
-    grid-template-rows: minmax(200px, 300px) minmax(200px, 300px);
-    gap: 10px; /* Espaciado entre elementos */
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Se adapta dinámicamente */
+    gap: 15px; /* Espaciado entre elementos */
+    padding: 20px;
 }
 
+/* Estilos para cada proyecto */
 .proyect {
     border: 1px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 2vw; /* Se ajusta al tamaño de la pantalla */
     text-align: center;
+    padding: 5%;
+    max-width: 100%; /* Para que no sea demasiado grande */
+    margin: auto;
+}
 
+/* 📲 Para pantallas pequeñas (menos de 768px) */
+@media (max-width: 768px) {
+    .proyects {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Ajusta el tamaño de las tarjetas */
+        gap: 10px;
+    }
+
+    .proyect {
+        border-radius: 5vw; /* Bordes más redondeados en pantallas pequeñas */
+        padding: 8%;
+    }
+}
+
+/* 📱 Para pantallas extra pequeñas (menos de 480px) */
+@media (max-width: 480px) {
+    .proyects {
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    .proyect {
+        border-radius: 8vw;
+        padding: 10%;
+    }
 }
 
 
@@ -76,11 +104,7 @@ a {
 }
 
 .footer {
-    background-color: #222;
     color: white;
     text-align: center;
     padding: 10px 0;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
   }
