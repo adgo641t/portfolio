@@ -1,135 +1,252 @@
-<!DOCTYPE html>
-<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
-    <script src="index.js"></script>
+   <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-1DZ62QN0RN"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-1DZ62QN0RN');
+      </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.4.1/css/simple-line-icons.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-    <title>Portfolio</title>
+    <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon-16x16.png">
+    <title>Website</title>
 </head>
 <body>
-    <div class="banner">
-        <div class="item">
-            <h1>Adrián Gómez Benitez</h1>
-            <p>Fullstack Developer</p>
-            <p>Barcelona, Spain</p>
-            <div>
-                <a href="https://www.linkedin.com/in/adri%C3%A1n-g%C3%B3mez-benitez-862930173/"><i class="fa-brands fa-linkedin-in"></i></a>                
-                <a href="https://github.com/adgo641t"><i class="fa-brands fa-github"></i></a>
-                <a href="https://mail.google.com/mail/u/0/#inbox?compose=GTvVlcRzBWSXBndwKxTwqvZTlfnqXwcxWnzWGCMNLFWzjxzxfFGNcLmVXjcKLFhLqTQRbxbzfmxfg"><i class="fa-solid fa-envelope"></i></a>  <!-- Ícono de correo -->
-            </div>  <!-- Icono de Twitter -->
-        </div>
-    </div>
-    <div class="about">
-        <div class="about-me">
-            <h1>About me</h1>
-            <p>Hi I'm Adrían, I'm a Fullstack developer with one year of experience, I like to work with the latest technologies and explore the technological world, I love to travel, explore and enjoy the little things.</p>
-        </div>
-    </div>
-    <div class="workflow">
-        <h1>Professional experience</h1>
-        <div class="indianwebs">
-            <span class="year">2023 - 2024</span>
-            <strong><h3>Indian webs</h3></strong>
-            <p>Here was my first position as a web developer and my usual tasks were writing new code in PHP, JS, inserting new posts, searching, deleting or updating data with MySQL. Here I learned to work under pressure and to make quality code.</p>
-            <div class="iconsDevelopment" style="margin-top: 10px">
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-php"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-solid fa-database"></i>
-            </div>
-        </div>
-        <div class="copen">
-            <span class="year">2019 - 2020</span>
-            <strong><h3>IT Helpdeks</h3></strong>
-            <p>I did an internship at the Copen institute, my daily tasks were to do inventory documentation, check the status of computers, laptops, printers and networks, I also did software installations, backups.</p>
-        </div>
-        <h1>Proyects</h1>
-        <div class="proyects">
-            <!--Proyect 1-->
-            <div class="proyect">
-                <strong><h3><a href="https://github.com/adgo641t/Foodfit">Foodfit</a></h3></strong>
-                <p>This was a final course project done in PHP with the Laravel framework, it has authentication with Breeze, roles, relationship database, basic crud about users, post, food, the application is a lifestyle website.</p>
-                <div class="icons">
-                    <i class="fa-brands fa-laravel"></i>
-                    <i class="fa-brands fa-php"></i>
-                    <i class="fa-solid fa-database"></i>
-                </div>
-            </div>
-            <!--Proyect 2-->
-            <div class="proyect">
-                <strong><h3><a href="https://api-pokemon-react-six.vercel.app/">Api Pokemon React</a></h3></strong>
-                <p>This was my first project made in React, it's an application that can consume data from a pokemon api or show the data from a JSON, if you click on a pokemon it takes you to the wiki of that pokemon.</p>
-                <div class="icons">
-                    <i class="fa-brands fa-react"></i>
-                </div>
-            </div>
-            <!--Proyect 3-->
-            <div class="proyect">
-                <strong><h3><a href="https://github.com/adgo641t/BookSwap">BookSwap</a></h3></strong>
-                <p>This project is about a bookshop where you can exchange books with other users within the platform,
-                    it is made with laravel, it has Breeze for authentication and relational database between the book and the user.</p>
-                <div class="icons">
-                    <i class="fa-brands fa-laravel"></i>
-                    <i class="fa-brands fa-php"></i>
-                    <i class="fa-solid fa-database"></i>
-                </div>
-            </div>
-            <!--Proyect 4-->
-            <div class="proyect">
-                <strong></strong><h3>Words</h3></strong>
-                <p>This is the guess the word game, it is made with HTML and pure JS, the user has to try to guess the word in a maximum of 6 tries.</p>
-                <div class="icons">
-                    <i class="fa-brands fa-html5"></i>
-                    <i class="fa-brands fa-js"></i>
-                </div>
-            </div>
-        </div>
-        <br>
-        <hr>
-        <div class="lenguajes">
-            <h1>Programing Lenguages</h1>
-            <div class="icons-lenguaje">
-                <i class="fa-brands fa-html5 custom-icon"></i>
-                <i class="fa-brands fa-css3-alt custom-icon"></i>
-                <i class="fa-brands fa-js custom-icon"></i>
-                <i class="fa-brands fa-php custom-icon"></i>
-                <i class="fa-solid fa-database custom-icon"></i>
-                <i class="fa-brands fa-laravel custom-icon"></i>
-                <i class="fa-brands fa-java custom-icon"></i>
-                <i class="fa-brands fa-python custom-icon"></i>
-                <i class="fa-brands fa-node custom-icon"></i>
-                <i class="fa-brands fa-angular custom-icon"></i>
-                <i class="fa-brands fa-react custom-icon"></i>
-            </div>
-        </div>
-        <!--Certifications-->
-        <div  class="certifications">
-          <h1>Cercifications</h1>
-          <div style="padding: 20px;" class="master">
-            <span class="year">2024</span>
-            <strong><h2>Master JS</h2></strong>
-            <p>This course on Udemy I learned more Javscript, as well as the use of async, await, fetch, I also learned the use of Angular, NodeJS, and non-relational database such as MongoDB.</p>
-            <a style="color:  grey;" href="https://www.linkedin.com/in/adri%C3%A1n-g%C3%B3mez-benitez-862930173/details/certifications/">See Certification</a>
+ <div class="container  barra">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <a class="navbar-brand" href="#">Adrian Gomez  -  Fullstack Developer</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class=" nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#Aboutme">About me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#proyectos">Projects</a>
+              </li>
+              </li>
+            </ul>
           </div>
-          <div style="padding: 20px;">
-            <span class="year">2021</span>
-            <strong><h2>Database Design and Programing with SQL</h2></strong>
-            <p>This course by oracle teaches database design and mysql fundamentals.</p>
-            <a style="color:  grey;" href="https://www.linkedin.com/in/adri%C3%A1n-g%C3%B3mez-benitez-862930173/details/certifications/">See Certification</a>
+      </nav>
+    </div>
+    <!--about me -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>¡Hi im Adrian!</h1>
+          <p>Web developer passionate about creating unique digital experiences. Explore my portfolio and get to know my projects.</p>        
+      <a class="show" href="#proyectos">Show Projects</a>
+      </div>
+    </section>
+    <br>
+    <!--stack-->
+    <div class="container tech-stack">
+      <h2 class="text-center mb-4">Stack</h2>
+      <div class="row">
+          <!-- Frontend -->
+          <div class="col-md-4">
+              <div class="card tech-card">
+                  <i class="fab fa-html5 tech-icon"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Frontend</h5>
+                      <p class="card-text">HTML, CSS, JavaScript, React, Angular</p>
+                  </div>
+              </div>
           </div>
-          <div style="padding: 20px;">
-            <span class="year">2019</span>
-            <strong><h2>Cisco Certified Entry Networking Technician</h2></strong>
-            <p>Course conducted by Cisco in which is an introduction to ipv4, ipv6 networks, router and DNS configuration, configuring servers and connection between them.</p>
-            <a style="color:  grey;" href="https://www.linkedin.com/in/adri%C3%A1n-g%C3%B3mez-benitez-862930173/details/certifications/">See Certification</a>
+          <br>
+          <!-- Backend -->
+          <div class="col-md-4">
+              <div class="card tech-card">
+                  <i class="fab fa-node-js tech-icon"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Backend</h5>
+                      <p class="card-text">Node.js, Express, PHP, Laravel, Java, Python</p>
+                  </div>
+              </div>
+          </div>
+          <br>
+          <!-- Base de Datos -->
+          <div class="col-md-4">
+              <div class="card tech-card">
+                  <i class="fas fa-database tech-icon"></i>
+                  <div class="card-body">
+                      <h5 class="card-title">Base de Datos</h5>
+                      <p class="card-text">MySQL, MongoDB, PostgreSQL, PL/SQL</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+    <!-- Sección de Proyectos -->
+  <h2 id="proyectos" class="text-center" style="padding-top: 50px; padding-bottom: 50px;" >My Projects</h2>
+
+  <section id="proyectos" class="projects-section">
+    <!-- Tarjeta de Proyecto 1 -->
+    <div class="project-card">
+      <img src="img/logo.png" alt="Proyecto 1" class="project-image">
+      <div class="project-info">
+        <h3 class="project-title">FoodFit</h3>
+        <p class="project-description">Web application made with laravel 8 with user authentication and registration, order and payment request, use of eloquent and ORM (object-model-relational) for the database, implementation of Gmail API for sending confirmation and emailing..</p>
+        <button class="btn btn-primary"> <a href="https://github.com/adgo641t/Foodfit" style="text-decoration: none; color: aliceblue;" target="_blank">Github</a></button>
+      </div>
+    </div>
+
+    <!-- Tarjeta de Proyecto 2 -->
+    <div class="project-card">
+      <img src="img/hangman.png" alt="Proyecto 2" class="project-image">
+      <div class="project-info">
+        <h3 class="project-title">Hangman</h3>
+        <p class="project-description">Application made for the UPC (Polytechnic University of Barcelona) Hangman game made by the students of the UPC in C# and creation of the website made by me, the backend part is made in Angular 12 and backend I used Node.js and Express with relational database.</p>
+        <button class="btn btn-primary"> <a href="https://github.com/adgo641t/UPC" style="text-decoration: none; color: aliceblue;" target="_blank">Github</a></button>
+      </div>
+    </div>
+
+    <!-- Tarjeta de Proyecto 3 -->
+    <div class="project-card">
+      <img src="img/suelo.png" alt="Proyecto 3" class="project-image">
+      <div class="project-info">
+        <h3 class="project-title">Pavisuelo</h3>
+        <p class="project-description">Website made by me in wordpress for a real client who does floor finishing and polishing.</p>
+        <button class="btn btn-primary"> <a href="https://www.pavisuelo.net/" style="text-decoration: none; color: aliceblue;" target="_blank">To the website</a></button>
+      </div>
+    </div>
+
+  </section>
+
+    <h1 class="text-center mt-5" id="Aboutme" >About me</h1>
+    <br>
+    <div class="container Aboutme">
+      <div class="row g-2">
+        <!-- Mapa (Google Maps) -->
+        <div class="col-12 col-md-6">
+          <iframe 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5988.999228968857!2d2.112031212159726!3d41.363228771183124!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a498e7c3a7aa05%3A0x478782c735a4c713!2sInstituto%20p%C3%BAblico%20Proven%C3%A7ana!5e0!3m2!1ses!2ses!4v1730386961138!5m2!1ses!2ses" 
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+          </iframe>
+        </div>
+
+        <!-- Descripción (Workstyle) -->
+        <div class="col-12 col-md-6">
+          <p class="text-center">
+            Hi, I'm Adrian. I am a FullStack Developer. I completed the Advanced Degree in Web Application Development (DAW) at the Provençana Institute, one of the best training centers in Barcelona. I learned technologies such as HTML, CSS, JavaScript, and PHP, as well as frameworks such as Angular and Laravel, developing modern and efficient applications.
+          </p>
+
+          <!-- Botón debajo del texto -->
+          <div class="text-center">
+            <a href="https://www.proven.cat/intraweb/index.php" class="btn btn-primary">Provençana Website</a>
           </div>
         </div>
+      </div>
     </div>
-    <div class="footer">
-      <p>&COPY; Adrian Gomez</p>
+    <br>
+    <!-- <div class="container work">
+      <div class="row g-2">
+        <div class="col-12 col-md-6">
+          <ul style=" list-style: none; ">
+            <li class="workstyle">
+              <p>
+                <strong>Teamwork</strong>: I think if we work together better things can be achieved, and I enjoy doing that.
+              </p>
+            </li>
+            <li class="workstyle">
+              <p>
+                <strong>Problem solving</strong>: I love facing challenges and getting better with problems. Facing them is when I can grow.
+              </p>
+            </li>
+            <li class="workstyle">
+              <p>
+                <strong>Creativity</strong>: I have a very creative mind and am always looking to find solutions to problems.
+              </p>
+            </li>
+            <li class="workstyle">
+              <p>
+                <strong>Effective communication</strong>: I communicate with my team and talk about the project, always listening to others' opinions, and if I don’t understand, I ask.
+              </p>
+            </li>
+          </ul>
+        </div>
+        
+    
+        <div class="col-12 col-md-6">
+          <img class="w-100" src="img/work.jpg" alt="Work Image">
+        </div>
+      </div>
+    </div> -->
+    <div class="container work-style">
+      <h2>My Work Style</h2> <!-- Encabezado para la sección -->
+      <div class="icon-container">
+          <div class="icon-box">
+              <i class="fas fa-users icon"></i>
+              <div class="description">Teamwork</div> <!-- Descripción del ícono -->
+          </div>
+          <div class="icon-box">
+              <i class="fas fa-lightbulb icon"></i>
+              <div class="description"> 
+                Creativity
+                </div> <!-- Descripción del ícono -->
+          </div>
+          <div class="icon-box">
+              <i class="fas fa-tools icon"></i>
+              <div class="description"> 
+                Troubleshooting
+                </div> <!-- Descripción del ícono -->
+          </div>
+          <div class="icon-box">
+              <i class="fas fa-comments icon"></i>
+              <div class="description">Effective communication
+              </div> <!-- Descripción del ícono -->
+          </div>
+      </div>
+  </div>
+    <div class="container opinions-section">
+      <h2>Opiniones Profesionales</h2> <!-- Encabezado para la sección -->
+      <h2>Professional Opinions</h2> <!-- Encabezado para la sección -->
+      <div class="row">
+          <div class="col-12 col-md-6 opinion">
+              <img src="img/indian.png" alt="Persona 1"> <!-- Imagen de perfil -->
+              <p>"Adrian is an exceptional professional, always delivers high quality work and is a great team player."</p> <!-- Opinión -->
+              <h5>Francisco trujillo</h5> <!-- Nombre de la persona -->
+              <span> 
+                Project Manager
+                </span> <!-- Cargo -->
+          </div>
+          <div class="col-12 col-md-6 opinion">
+              <img src="img/victor.png" alt="Persona 2"> <!-- Imagen de perfil -->
+              <p>"In my experience as a teacher, Adrian has proven to be a programmer with excellent soft skills. His creativity and ability to work in a team make him stand out.."</p> <!-- Opinión -->
+              <h5>Victor Ramos</h5> <!-- Nombre de la persona -->
+              <span>UI/UX Teacher</span> <!-- Cargo -->
+          </div>
+      </div>
     </div>
+    <br>
+    <!--Form-->
+    <div class="social-icons">
+      <a href="https://github.com/tu_usuario" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+      </a>
+      <a href="https://linkedin.com/in/tu_usuario" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+      </a>
+  </div>
+       <!-- Pie de página -->
+       <footer class="bg-dark text-white text-center py-4">
+        <p>© 2025 Adrian's Portfolio</p>
+    </footer>
 </body>
-</html>
