@@ -1,3 +1,5 @@
+<!DOCTYPE html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,7 +24,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <link rel="icon" type="image/x-icon" href="img/favicon_io/favicon-16x16.png">
-    <title>Website</title>
+    <meta name="description" content="Adrian Gomez - Fullstack Developer especializado en React, Laravel y Node.js. Portafolio con proyectos profesionales.">
+    <meta name="keywords" content="developer, fullstack, react, laravel, node.js, web developer">
+    <meta property="og:title" content="Adrian Gomez - Fullstack Developer">
+    <meta property="og:description" content="Portafolio de Adrian Gomez, desarrollador fullstack en Barcelona">
+    <meta name="theme-color" content="#667eea">
+    <title>Adrian Gomez - Fullstack Developer | Portafolio</title>
 </head>
 <body>
  <div class="container  barra">
@@ -41,7 +48,6 @@
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#proyectos">Projects</a>
-              </li>
               </li>
             </ul>
           </div>
@@ -66,7 +72,7 @@
                   <i class="fab fa-html5 tech-icon"></i>
                   <div class="card-body">
                       <h5 class="card-title">Frontend</h5>
-                      <p class="card-text">HTML, CSS, JavaScript, React, Angular</p>
+                      <p class="card-text">HTML, CSS, JavaScript,Jquery, React, Angular</p>
                   </div>
               </div>
           </div>
@@ -94,56 +100,136 @@
           </div>
       </div>
   </div>
-    <!-- Sección de Proyectos -->
-  <h2 id="proyectos" class="text-center" style="padding-top: 50px; padding-bottom: 50px;" >My Projects</h2>
 
-  <section id="proyectos" class="projects-section">
+  <!-- Sección de Habilidades -->
+  <section class="skills-section">
+    <div class="container">
+      <h2>Habilidades & Experiencia</h2>
+      <div class="skills-grid">
+        <!-- Frontend Skills -->
+        <div class="skill-card">
+          <h3>Frontend</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 90%;" data-skill="React, Angular"></div>
+          </div>
+          <span class="skill-percentage">90%</span>
+          <p class="skill-list">React • Angular • Vue • TypeScript • Tailwind</p>
+        </div>
+
+        <!-- Backend Skills -->
+        <div class="skill-card">
+          <h3>Backend</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 85%;" data-skill="Node.js, Laravel"></div>
+          </div>
+          <span class="skill-percentage">85%</span>
+          <p class="skill-list">Node.js • Laravel • Python • Express • API REST</p>
+        </div>
+
+        <!-- Database Skills -->
+        <div class="skill-card">
+          <h3>Bases de Datos</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 80%;" data-skill="SQL, MongoDB"></div>
+          </div>
+          <span class="skill-percentage">80%</span>
+          <p class="skill-list">MySQL • PostgreSQL • MongoDB • Firebase</p>
+        </div>
+
+        <!-- Tools -->
+        <div class="skill-card">
+          <h3>Herramientas</h3>
+          <div class="skill-bar">
+            <div class="skill-progress" style="width: 88%;" data-skill="Git, Docker"></div>
+          </div>
+          <span class="skill-percentage">88%</span>
+          <p class="skill-list">Git • Docker • Webpack • VS Code • Linux</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sección de Proyectos -->
+  <h2 class="text-center" style="padding-top: 50px; padding-bottom: 30px;">My Projects</h2>
+
+  <section id="proyectos" class="projects-section-wrapper">
+    <div class="container">
+      <!-- Filtros -->
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">Todos</button>
+        <button class="filter-btn" data-filter="laravel">Laravel</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="wordpress">WordPress</button>
+        <button class="filter-btn" data-filter="html">HTML & CSS</button>
+      </div>
+
+      <!-- Grid de proyectos -->
+      <div class="projects-section">
     <!-- Tarjeta de Proyecto 1 -->
-    <div class="project-card">
-      <img src="img/logo.png" alt="Proyecto 1" class="project-image">
+    <div class="project-card" data-category="laravel">
+      <div class="project-overlay">
+        <a href="https://github.com/adgo641t/Foodfit" target="_blank" class="project-link">Ver código</a>
+      </div>
+      <img src="img/logo.png" alt="FoodFit" class="project-image">
       <div class="project-info">
         <h3 class="project-title">FoodFit</h3>
+        <p class="project-tech">Laravel • MySQL • Gmail API</p>
         <p class="project-description">Web application made with laravel 8 with user authentication and registration, order and payment request, use of eloquent and ORM (object-model-relational) for the database, implementation of Gmail API for sending confirmation and emailing..</p>
-        <button class="btn btn-primary"> <a href="https://github.com/adgo641t/Foodfit" style="text-decoration: none; color: aliceblue;" target="_blank">Github</a></button>
       </div>
     </div>
 
     <!-- Tarjeta de Proyecto 2 -->
-    <div class="project-card">
-      <img src="img/pikareact.webp" alt="Proyecto 2" class="project-image">
+    <div class="project-card" data-category="react">
+      <div class="project-overlay">
+        <a href="https://api-pokemon-react-six.vercel.app/" target="_blank" class="project-link">Ver demo</a>
+      </div>
+      <img src="img/pikareact.webp" alt="API Pokemon" class="project-image">
       <div class="project-info">
         <h3 class="project-title">API Pokemon</h3>
+        <p class="project-tech">React • API • JavaScript</p>
         <p class="project-description">Application made in React, is a simple API that shows all pokemon created in history and if you click you go to the wiki of that pokemon</p>
-        <button class="btn btn-primary"> <a href="https://api-pokemon-react-six.vercel.app/" style='text-decoration: none; color: aliceblue;' target=_blank>To the website</a></button>
       </div>
     </div>
 
     <!-- Tarjeta de Proyecto 3 -->
-    <div class="project-card">
-      <img src="img/suelo.png" alt="Proyecto 3" class="project-image">
+    <div class="project-card" data-category="wordpress">
+      <div class="project-overlay">
+        <a href="https://www.pavisuelo.net/" target="_blank" class="project-link">Ver sitio</a>
+      </div>
+      <img src="img/suelo.png" alt="Pavisuelo" class="project-image">
       <div class="project-info">
         <h3 class="project-title">Pavisuelo</h3>
+        <p class="project-tech">WordPress • Diseño • E-commerce</p>
         <p class="project-description">Website made by me in wordpress for a real client who does floor finishing and polishing.</p>
-        <button class="btn btn-primary"> <a href="https://www.pavisuelo.net/" style="text-decoration: none; color: aliceblue;" target="_blank">To the website</a></button>
       </div>
     </div>
 
-    <div class="project-card">
-      <img src="img/rental.jpeg" alt="Proyecto 3" class="project-image">
+    <!-- Tarjeta de Proyecto 4 -->
+    <div class="project-card" data-category="html">
+      <div class="project-overlay">
+        <a href="https://luxury-cars-flame.vercel.app/" target="_blank" class="project-link">Ver demo</a>
+      </div>
+      <img src="img/rental.jpeg" alt="Luxury cars" class="project-image">
       <div class="project-info">
         <h3 class="project-title">Luxury cars</h3>
+        <p class="project-tech">HTML • CSS • Responsive</p>
         <p class="project-description">This website is made only with HTML and CSS, its for rent a luxury cars.</p>
-        <button class="btn btn-primary"> <a href="https://luxury-cars-flame.vercel.app/" style="text-decoration: none; color: aliceblue;" target="_blank">To the website</a></button>
       </div>
     </div>
 
-    <div class="project-card">
-      <img src="img/r.jpg" alt="Proyecto 3" class="project-image">
+    <!-- Tarjeta de Proyecto 5 -->
+    <div class="project-card" data-category="react">
+      <div class="project-overlay">
+        <a href="https://pomodoro-taupe-beta.vercel.app/" target="_blank" class="project-link">Ver demo</a>
+      </div>
+      <img src="img/r.jpg" alt="Pomodoro Timer" class="project-image">
       <div class="project-info">
         <h3 class="project-title">Pomodoro Timer</h3>
+        <p class="project-tech">React • Timer • Productividad</p>
         <p class="project-description">This website is made with the purpouse of study, is a simple pomodoro with timer and stops breaks, is made in React</p>
-        <button class="btn btn-primary"> <a href="https://pomodoro-taupe-beta.vercel.app/" style="text-decoration: none; color: aliceblue;" target="_blank">To the website</a></button>
       </div>
+    </div>
+    </div>
     </div>
   </section>
 
@@ -233,7 +319,6 @@
       </div>
   </div>
     <div class="container opinions-section">
-      <h2>Opiniones Profesionales</h2> <!-- Encabezado para la sección -->
       <h2>Professional Opinions</h2> <!-- Encabezado para la sección -->
       <div class="row">
           <div class="col-12 col-md-6 opinion">
@@ -253,6 +338,28 @@
       </div>
     </div>
     <br>
+
+    <!-- Sección de Contacto -->
+    <section class="contact-section">
+      <div class="container">
+        <h2>¿Empezamos un proyecto?</h2>
+        <p>Estoy disponible para nuevas oportunidades y colaboraciones</p>
+
+        <form class="contact-form" id="contactForm">
+          <div class="form-group">
+            <input type="text" placeholder="Tu nombre" required>
+          </div>
+          <div class="form-group">
+            <input type="email" placeholder="Tu email" required>
+          </div>
+          <div class="form-group">
+            <textarea placeholder="Tu mensaje" rows="5" required></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Enviar Mensaje</button>
+        </form>
+      </div>
+    </section>
+
     <!--Form-->
     <div class="social-icons">
       <a href="https://github.com/adgo641t" target="_blank" class="social-icon">
